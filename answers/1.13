@@ -1,0 +1,6 @@
+# Use the /write path of the backend URL to write to the log file of the back container
+curl -X GET http://backend-ip:5000/write/your-message
+
+# Check the contents of the log file by connecting to the backend container in interactive mode
+docker exec -it back-container /bin/bash
+cat logs/my-messages.log

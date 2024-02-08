@@ -1,0 +1,1 @@
+docker run -d -p 80:80 -e WS_BACK_URL=http://back-container-ip:5000 --name front-container front-image
