@@ -1,2 +1,0 @@
-docker build -t my-python-app app/back
-docker run -d -p 8080:8080 my-python-app
