@@ -1,0 +1,14 @@
+version: '3'
+services:
+  my-service:
+    image: my-back-image
+    ports:
+      - "5000:5000"
+    environment:
+      - MY_ENV_VAR=value
+  my-frontend-service:
+    image: my-frontend-image
+    ports:
+      - "80:80"
+    environment:
+      - FRONT_ENV_VAR=value
